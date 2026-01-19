@@ -94,5 +94,30 @@ This project focuses on transforming raw sales data into actionable business ins
 * `Insights.docx` - A document summarizing the key business findings derived from the analysis.
 
 ---
+# 🗄️ Task 3: SQL Basics - Filtering & Aggregation
+**Internship:** Elevate Labs | **Domain:** Data Analytics
+**Dataset:** Superstore Sales (CSV)
 
+## 📝 Overview
+This task focuses on using **SQL (Structured Query Language)** to query, filter, and summarize sales data. The goal was to extract meaningful business insights, such as top-selling categories and regional performance summaries.
+
+## 🛠️ Tools Used
+* **Database Engine:** SQLite / MySQL
+* **Key Commands:** `SELECT`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`, `LIKE`.
+
+## 🔍 Queries & Insights
+1.  **Top Tech Sales:**
+    * *Query:* Filtered for `Category = 'Technology'` and sorted by `Sales DESC`.
+    * *Insight:* Identified high-ticket technology items driving revenue.
+2.  **Regional Summary:**
+    * *Query:* Grouped data by `Region` to calculate `COUNT(*)` (Orders) and `SUM(Sales)`.
+    * *Insight:* The **West** region has the highest number of orders (3,203) and total sales ($725k).
+3.  **High-Volume Categories:**
+    * *Query:* Used `HAVING SUM(Sales) > 100000` to filter out low-performing sub-categories.
+    * *Insight:* Focuses analysis on major revenue drivers like Phones and Chairs.
+
+## 📂 Files Included
+* `queries_task3.sql` - The complete SQL script with comments.
+* `sales_summary.csv` - Exported result of the regional performance query.
+  
 *Submitted by: Kalai Magal*
