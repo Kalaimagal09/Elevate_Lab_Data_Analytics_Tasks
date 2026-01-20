@@ -1,0 +1,4 @@
+"Customer_Name","Order_ID","Order_Date","Total_Amount"
+"Alice Smith","101","2023-01-15","500"
+"Alice Smith","103","2023-03-05","300"
+"Bob Johnson","102","2023-02-10","120"

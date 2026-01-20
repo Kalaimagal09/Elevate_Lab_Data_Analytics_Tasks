@@ -1,0 +1,5 @@
+Business Insights from SQL Analysis
+
+Inactive Customer Identification: The LEFT JOIN analysis identified one customer (Evan Wright) who is registered but has not placed any orders. This segment should be targeted with a "First Purchase Discount" email campaign.
+Top Spenders: Alice Smith is our highest-value customer with multiple high-ticket orders (Total: $800), indicating a strong loyalty to the Electronics category.
+Product Strategy: The "Accessories" category (Mouse/Keyboards) drives volume, but "Electronics" (Laptops) drives the majority of revenue per transaction.
