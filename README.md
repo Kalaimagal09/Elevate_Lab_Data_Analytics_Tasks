@@ -94,6 +94,7 @@ This project focuses on transforming raw sales data into actionable business ins
 * `Insights.docx` - A document summarizing the key business findings derived from the analysis.
 
 ---
+
 # 🗄️ Task 3: SQL Basics - Filtering & Aggregation
 **Internship:** Elevate Labs | **Domain:** Data Analytics
 **Dataset:** Superstore Sales (CSV)
@@ -119,5 +120,89 @@ This task focuses on using **SQL (Structured Query Language)** to query, filter,
 ## 📂 Files Included
 * `queries_task3.sql` - The complete SQL script with comments.
 * `sales_summary.csv` - Exported result of the regional performance query.
+
+---
   
+# 🔗 Task 4: SQL Intermediate – Joins & Business Logic
+**Internship:** Elevate Labs | **Domain:** Data Analytics  
+**Dataset:** E-Commerce Data (Simulated Relational Schema)
+
+## 📝 Overview
+This task focuses on **Relational Database Management**, specifically mastering **SQL Joins** (`INNER` and `LEFT`) to link multiple datasets. Since the raw data was provided as a flat file, I engineered a **normalized database schema** (creating `Customers`, `Orders`, and `Products` tables) to accurately simulate a real-world business environment and perform complex queries.
+
+## 🛠 Tools Used
+* **SQL Engine:** SQLite Online / MySQL
+* **Key Concepts:** Database Normalization, Primary/Foreign Keys, INNER JOIN, LEFT JOIN, Aggregations.
+
+## 📂 Database Schema (Simulation)
+To enable relational queries, I structured the data into three linked tables:
+1.  **Customers:** (`Customer_ID`, `Name`, `Region`)
+2.  **Orders:** (`Order_ID`, `Customer_ID`, `Date`, `Amount`)
+3.  **Products:** (`Product_ID`, `Category`, `Price`)
+
+## 🔍 Queries & Analysis
+1.  **Order Validation (INNER JOIN):**
+    * *Query:* Linked `Customers` table with `Orders` to view detailed transaction history for active buyers.
+    * *Goal:* Verify which customers have successfully completed purchases.
+
+2.  **Churn Identification (LEFT JOIN):**
+    * *Query:* Performed a `LEFT JOIN` to find customers present in the directory but missing from the `Orders` table (`Order_ID IS NULL`).
+    * *Result:* Identified inactive users (e.g., "Evan Wright") for targeted marketing/re-engagement.
+
+3.  **Product Performance:**
+    * *Query:* Joined `Order_Items` with `Products` to calculate total revenue per category.
+    * *Insight:* "Technology" proved to be the highest revenue-generating category.
+
+## 📂 Files Included
+* `joins_queries.sql` – The complete SQL script including the table creation (setup) and the solution queries.
+* `joined_output.csv` – The final merged dataset showing Customer-Order details.
+* `insights.txt` – A summary of the business findings (Inactive customers & Top categories).
+
+---
+
+# 🐍 Task 5: Python Basics – Data Cleaning with Pandas
+**Internship:** Elevate Labs | **Domain:** Data Analytics  
+**Dataset:** Sample Superstore (CSV)
+
+## 📝 Overview
+This project involves moving from manual Excel analysis to **Python-based automation**. Using **Google Colab** and the **Pandas** library, I built a data cleaning pipeline to process raw sales data, handle missing values, and engineer new features for deeper analysis.
+
+## 🛠 Tools Used
+* **IDE:** Google Colab (Jupyter Notebook Environment)
+* **Language:** Python 3.x
+* **Libraries:** `pandas`, `numpy`
+* **Techniques:** Data Manipulation, Type Casting, Feature Engineering, Error Handling.
+
+## ⚙️ Cleaning Process (Step-by-Step)
+1.  **Environment Setup:**
+    * Imported `pandas` and loaded the `SampleSuperstore.csv` dataset.
+    * Used `df.info()` and `df.shape` to inspect the raw data structure.
+
+2.  **Column Standardization (Key Fix):**
+    * **Issue:** The raw CSV contained inconsistent column names (e.g., `Postal Code` vs `postal_code` vs `Ship Mode`), leading to `KeyError`.
+    * **Solution:** Applied string manipulation to standardize all headers to lowercase with underscores (e.g., `postal_code`, `ship_mode`).
+
+3.  **Data Cleaning:**
+    * **Duplicates:** Identified and removed duplicate rows using `df.drop_duplicates()`.
+    * **Missing Values:** Imputed missing values in the `postal_code` column with `'0'` to ensure data integrity.
+    * **Type Conversion:** Converted `postal_code` from float/numeric to **string (object)**, as zip codes are categorical identifiers.
+
+4.  **Feature Engineering:**
+    * Created **`profit_margin`**: Calculated as `Profit / Sales` to analyze deal efficiency.
+    * Created **`price_per_unit`**: Calculated as `Sales / Quantity`.
+
+5.  **Export:**
+    * Saved the final, clean dataframe as `cleaned_data.csv`.
+
+## 📓 Key Observations
+* **Automation:** Python scripts allow for reproducible cleaning, saving hours compared to manual Excel work.
+* **Data Types:** A critical step was identifying that "Postal Code" was being read as a number. Converting it to text prevents mathematical errors.
+* **Data Integrity:** Removing duplicates was essential to avoid inflating the total sales figures in the final report.
+
+## 📂 Files Included
+* `Task5_Cleaning.ipynb` - The Jupyter Notebook with all Python code and markdown notes.
+* `cleaned_data.csv` - The processed dataset, ready for visualization.
+* `SampleSuperstore.csv` - The raw input file.
+
+---
 *Submitted by: Kalai Magal*
