@@ -205,4 +205,28 @@ This project involves moving from manual Excel analysis to **Python-based automa
 * `SampleSuperstore.csv` - The raw input file.
 
 ---
+
+# 📊 Task 6: Data Visualization with Python (Matplotlib)
+**Internship:** Elevate Labs | **Domain:** Data Analytics  
+**Dataset:** Sample Superstore
+
+## 📝 Overview
+The final task of the internship focuses on **Visual Storytelling**. Using the **Matplotlib** library in Python, I transformed the cleaned dataset into meaningful charts to uncover patterns in sales, profit, and product performance.
+
+## 🛠 Tools Used
+* **Environment:** Google Colab
+* **Libraries:** `pandas`, `matplotlib.pyplot`
+* **Charts Created:** Bar Chart, Line Chart, Histogram, Scatter Plot.
+
+## 📈 Visual Insights
+1.  **Bar Chart (Top Products):** Identified that **Phones** and **Chairs** are the primary revenue drivers.
+2.  **Line Chart (Trend):** Showed a steep drop-off in sales after the top 5 sub-categories, indicating reliance on a few key products (Pareto Principle).
+3.  **Scatter Plot (Sales vs Profit):** Revealed a weak correlation between high sales and high profit. Several large orders resulted in losses, suggesting a need to review the **Discount Strategy**.
+4.  **Histogram:** Confirmed that most orders yield a small profit ($0–$50), visualizing the company's high-volume, low-margin business model.
+
+## 📂 Files Included
+* `Task6_Visualization.ipynb` - The source code for all charts.
+* `charts_output.pdf` - Snapshot of the generated visualizations.
+
+---
 *Submitted by: Kalai Magal*
