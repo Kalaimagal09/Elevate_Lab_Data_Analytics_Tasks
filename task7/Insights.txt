@@ -1,0 +1,5 @@
+Business Dashboard Insights - Superstore
+
+Revenue Driver: The Technology category is the primary revenue generator ($836K), outperforming Furniture and Office Supplies.
+Regional Strength: The West Region is our strongest market ($725K Sales), whereas the South Region lags behind.
+Profitability Check: The overall profit margin is healthy at 12.5%. However, filtering by "Furniture" reveals a much lower margin, suggesting a need for cost optismization in that specific category.
