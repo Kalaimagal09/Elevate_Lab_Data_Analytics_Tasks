@@ -229,4 +229,26 @@ The final task of the internship focuses on **Visual Storytelling**. Using the *
 * `charts_output.pdf` - Snapshot of the generated visualizations.
 
 ---
+
+# 📊 Task 7: Interactive Dashboard (Power BI)
+**Internship:** Elevate Labs | **Domain:** Data Analytics
+**Tools:** Power BI Desktop
+
+## 📝 Overview
+This final capstone project involved building an interactive **Business Intelligence Dashboard** to visualize key performance indicators (KPIs) for the Superstore dataset.
+
+## 🚀 Key Features
+* **KPI Cards:** Displaying Total Sales ($2.30M), Profit ($286K), and Margin (12.5%).
+* **Interactive Slicers:** Allows filtering by Region and Segment to analyze specific markets.
+* **DAX Measures:** Custom calculations created for dynamic reporting.
+
+## 💡 Insights
+* **Technology** is the best-selling category.
+* **West** is the top-performing region.
+* **Furniture** has the lowest profit margins despite high sales volume.
+
+## 📂 Files Included
+* `Dashboard_Screenshot.pdf` - A snapshot of the final Power BI report.
+* `Insights.txt` - Summary of business findings.
+  
 *Submitted by: Kalai Magal*
