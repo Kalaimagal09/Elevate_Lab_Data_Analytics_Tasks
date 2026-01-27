@@ -1,0 +1,5 @@
+Advanced SQL Insights
+
+Regional Dominance: The window function analysis confirms that Phones and Chairs are consistently the top 2 ranked categories across all regions (Central, East, South, West).
+Sales Volatility: The Month-over-Month (MoM) growth analysis using LAG() reveals a significant 10.6% drop in sales from March to April, indicating a seasonal slump or inventory issue in Q2.
+Tie Handling: The RANK() function successfully identified clear leaders, and there were no exact ties in the top 3 sub-categories, meaning DENSE_RANK() produced identical results in this specific dataset.
