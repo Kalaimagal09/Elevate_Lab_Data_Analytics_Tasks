@@ -250,5 +250,49 @@ This final capstone project involved building an interactive **Business Intellig
 ## 📂 Files Included
 * `Dashboard_Screenshot.pdf` - A snapshot of the final Power BI report.
 * `Insights.txt` - Summary of business findings.
-  
+
+---
+
+# 📉 Task 8: Advanced SQL – Window Functions
+**Internship:** Elevate Labs | **Domain:** Data Analytics  
+**Dataset:** Superstore Sales (Enriched with Synthetic Dates)
+
+## 📝 Overview
+This task focuses on **Advanced SQL Analytics**, specifically mastering **Window Functions** to perform complex calculations across rows without collapsing them (unlike standard `GROUP BY` aggregations). Since the original dataset lacked time-series data, I engineered a training table with dates to demonstrate **Running Totals** and **Month-over-Month (MoM) Growth**.
+
+## 🛠 Tools Used
+* **SQL Engine:** SQLite Online / PostgreSQL
+* **Key Functions:** `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, `LAG()`, `OVER()`, `PARTITION BY`.
+
+## 📂 Database Schema (Setup)
+To enable time-series analysis, I created a custom table `superstore_dates` with the following structure:
+* `Order_Date` (YYYY-MM-DD)
+* `Region` (Central, East, South, West)
+* `Sub_Category` (Phones, Chairs, etc.)
+* `Sales` (Numeric Amount)
+
+## 🔍 Queries & Analysis
+1.  **Regional Ranking (PARTITION BY):**
+    * *Query:* Used `RANK() OVER(PARTITION BY Region ORDER BY Sales DESC)` to identify the top-performing products within *each* specific region.
+    * *Insight:* **Phones** and **Chairs** consistently rank #1 or #2 across all geographic regions.
+
+2.  **Running Total (Cumulative Sum):**
+    * *Query:* Calculated a rolling sum of sales using `SUM(Sales) OVER (ORDER BY Order_Date)`.
+    * *Business Value:* Allows stakeholders to visualize the trajectory of revenue accumulation throughout the quarter.
+
+3.  **Month-over-Month Growth (LAG):**
+    * *Query:* Used `LAG(Sales, 1)` to retrieve the previous month's sales and compare it with the current month.
+    * *Insight:* Detected a **10.6% drop** in sales between March and April, highlighting a seasonal dip.
+
+4.  **Top 3 Performers (CTE Filtering):**
+    * *Query:* Wrapped the ranking logic in a **Common Table Expression (CTE)** to filter results and show only the top 3 sub-categories per region.
+
+## 📂 Files Included
+* `task8_window.sql` – The complete SQL script containing the setup code and all 4 analytical queries.
+* `ranked_customers.csv` – Exported output showing product rankings by region.
+* `mom_growth.csv` – Exported output showing the calculated month-over-month growth percentages.
+* `insights_task8.txt` – Summary of the business findings derived from the window functions.
+
+---
 *Submitted by: Kalai Magal*
+
