@@ -294,5 +294,42 @@ To enable time-series analysis, I created a custom table `superstore_dates` with
 * `insights_task8.txt` – Summary of the business findings derived from the window functions.
 
 ---
-*Submitted by: Kalai Magal*
 
+# 🌟 Task 9: SQL Data Modeling – Building a Star Schema
+**Internship:** Elevate Labs | **Domain:** Data Analytics  
+**Dataset:** Superstore Sales (Flat CSV transformed into Relational Model)
+
+## 📝 Overview
+This task focuses on **Data Warehousing & Modeling**. Starting with a denormalized "flat file" (CSV), I architected a **Star Schema** to optimize the data for analytical querying. This involved splitting the data into a central **Fact Table** (quantitative data) and surrounding **Dimension Tables** (descriptive attributes), establishing relationships via Primary and Foreign Keys.
+
+## 🛠 Tools Used
+* **SQL Engine:** SQLite Online / PostgreSQL
+* **Modeling Tool:** [dbdiagram.io](https://dbdiagram.io/) (for Entity-Relationship Diagram)
+* **Key Concepts:** Database Normalization, Primary Keys (PK), Foreign Keys (FK), Star Schema, Fact vs. Dimension tables.
+
+## 🏗 Database Architecture (Star Schema)
+I transformed the single Excel sheet into a relational model with **1 Fact Table** and **4 Dimension Tables**:
+
+### 📊 Fact Table
+* **`Fact_Sales`**: Contains the metrics and foreign keys.
+    * *Metrics:* Sales, Quantity, Discount, Profit.
+    * *Keys:* `location_id`, `product_id`, `segment_id`, `ship_mode_id`.
+
+### 🧩 Dimension Tables
+1.  **`Dim_Location`**: Country, City, State, Region, Postal Code.
+2.  **`Dim_Product`**: Category, Sub-Category.
+3.  **`Dim_Segment`**: Consumer, Corporate, Home Office.
+4.  **`Dim_ShipMode`**: Standard Class, Second Class, etc.
+
+## 🔍 Steps & Analysis
+1.  **Normalization:** Extracted distinct attributes from the raw data to create lookup (Dimension) tables, assigning unique IDs (Primary Keys) to each.
+2.  **Schema Construction:** Built the tables using `CREATE TABLE` and established relationships using `FOREIGN KEY` constraints.
+3.  **Validation:** Wrote complex `JOIN` queries to verify that the Star Schema produces the same analytical results as the original flat file (e.g., *Total Revenue by Category*).
+
+## 📂 Files Included
+* **`task9_star_schema.sql`** – The complete SQL script to create the tables, define keys, and run validation queries.
+* **`star_schema_diagram.txt`** – The code used to generate the visual diagram in dbdiagram.io.
+* **`analysis_outputs.csv`** – The analytical results obtained by joining the new Fact and Dimension tables.
+
+---
+*Submitted by: Kalai Magal*
