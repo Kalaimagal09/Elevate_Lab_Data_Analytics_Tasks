@@ -1,0 +1,36 @@
+// Star Schema for Superstore Sales
+
+Table Fact_Sales {
+  sales_id int [pk]
+  location_id int [ref: > Dim_Location.location_id]
+  product_id int [ref: > Dim_Product.product_id]
+  segment_id int [ref: > Dim_Segment.segment_id]
+  ship_mode_id int [ref: > Dim_ShipMode.ship_mode_id]
+  sales decimal
+  quantity int
+  profit decimal
+}
+
+Table Dim_Location {
+  location_id int [pk]
+  city varchar
+  state varchar
+  region varchar
+  postal_code varchar
+}
+
+Table Dim_Product {
+  product_id int [pk]
+  category varchar
+  sub_category varchar
+}
+
+Table Dim_Segment {
+  segment_id int [pk]
+  segment varchar
+}
+
+Table Dim_ShipMode {
+  ship_mode_id int [pk]
+  ship_mode varchar
+}
