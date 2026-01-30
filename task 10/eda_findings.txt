@@ -1,0 +1,9 @@
+EDA & Outlier Analysis Findings
+
+Data Quality: The dataset is clean with 0% missing values in key columns.
+
+Distribution: The Sales data is highly "Right Skewed". Most orders are small (<$50), but a few massive orders (over $5,000) stretch the graph.
+
+Outliers: Using the IQR method, we identified several hundred transactions as outliers. Instead of deleting them (which would lose revenue data), we capped them at the upper threshold to normalize the distribution for modeling.
+
+Correlation: There is a moderate positive correlation between Sales and Profit (as expected), but Discount has a strong negative correlation with Profit, confirming that high discounts destroy profitability.
