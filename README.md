@@ -332,4 +332,36 @@ I transformed the single Excel sheet into a relational model with **1 Fact Table
 * **`analysis_outputs.csv`** – The analytical results obtained by joining the new Fact and Dimension tables.
 
 ---
+
+# 🔎 Task 10: Python EDA & Outlier Detection
+**Internship:** Elevate Labs | **Domain:** Data Analytics  
+**Dataset:** Sample Superstore (Sales & Profit Focus)
+
+## 📝 Overview
+This task focused on **Exploratory Data Analysis (EDA)**, the critical process of understanding data before modeling. Using **Pandas** and **Seaborn**, I analyzed the statistical properties of the data, visualized distributions, and handled anomalies (outliers) to prepare a clean dataset.
+
+## 🛠 Tools & Techniques
+* **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`
+* **Statistical Methods:** IQR (Interquartile Range), Skewness check, Correlation Analysis.
+* **Data Cleaning:** Outlier Capping (Winsorization).
+
+## 📊 Key Steps
+1.  **Data Profiling:** Checked for missing values and data types (`.info()`, `.isnull()`).
+2.  **Visualization:**
+    * **Histograms:** Revealed that Sales data is heavily right-skewed (non-normal distribution).
+    * **Boxplots:** Visually confirmed the presence of extreme high-value outliers.
+3.  **Outlier Handling:**
+    * Calculated IQR limits.
+    * Flagged outliers in a new column `is_outlier`.
+    * Applied **Capping** to limit extreme values without removing records.
+4.  **Correlation Analysis:**
+    * Generated a Heatmap to show relationships.
+    * Found that **Discount** negatively impacts **Profit** (Correlation: -0.22).
+
+## 📂 Files Included
+* `task10_eda.ipynb` – The Jupyter Notebook with all analysis code.
+* `cleaned_dataset.csv` – The processed dataset with capped outliers.
+* `eda_findings.txt` – Summary of statistical insights.
+
+---
 *Submitted by: Kalai Magal*
