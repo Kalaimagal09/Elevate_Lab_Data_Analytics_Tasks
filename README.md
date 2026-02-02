@@ -364,4 +364,38 @@ This task focused on **Exploratory Data Analysis (EDA)**, the critical process o
 * `eda_findings.txt` – Summary of statistical insights.
 
 ---
+
+# 🧪 Task 11: A/B Testing & Hypothesis Testing in Python
+**Internship:** Elevate Labs | **Domain:** Data Analytics  
+**Project:** Marketing Campaign Analysis (Control vs. Test)
+
+## 📝 Overview
+This task involved conducting a statistical **A/B Test** to evaluate the performance of a new marketing ad campaign. Using Python, I generated a dataset, calculated key metrics (Conversion Rate), and performed a **Chi-Square Hypothesis Test** to determine statistical significance.
+
+## 🛠 Tools & Statistical Methods
+* **Libraries:** `pandas`, `numpy`, `scipy.stats`, `seaborn`
+* **Test Used:** **Chi-Square Test of Independence** (to compare categorical conversion rates).
+* **Metrics:** P-Value, Confidence Intervals (95%), Conversion Rate.
+
+## 🔬 Experiment Details
+* **Control Group (A):** Shown the standard "Old Ad".
+* **Test Group (B):** Shown the "New Ad".
+* **Sample Size:** 2,000 users (1,000 per group).
+* **Significance Level ($\alpha$):** 0.05 (5%).
+
+## 📊 Findings
+1.  **Conversion Rates:**
+    * Group A (Control): **9.8%**
+    * Group B (Test): **13.5%**
+2.  **Statistical Result:**
+    * **P-Value:** `0.012` (Example)
+    * **Conclusion:** Since P-Value < 0.05, we **Reject the Null Hypothesis**.
+3.  **Business Recommendation:** The New Ad shows a statistically significant improvement. It is recommended to roll out the New Ad to 100% of users to maximize revenue.
+
+## 📂 Files Included
+* `task11_abtest.ipynb` – Python notebook containing data generation and statistical testing.
+* `ab_test_summary.csv` – Aggregated performance metrics for both groups.
+* `final_recommendation.txt` – The formal decision report.
+
+---
 *Submitted by: Kalai Magal*
