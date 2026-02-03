@@ -398,4 +398,29 @@ This task involved conducting a statistical **A/B Test** to evaluate the perform
 * `final_recommendation.txt` – The formal decision report.
 
 ---
+
+# 🔄 Task 12: Data Transformation with Power Query
+**Internship:** Elevate Labs | **Domain:** Data Analytics
+**Tool:** Power BI Desktop (Power Query Editor)
+
+## 📝 Overview
+Data "wrangling" is often 80% of an analyst's job. In this task, I imported raw sales data into **Power BI** and used **Power Query (M Language)** to clean, shape, and enrich the dataset before visualization. This ensures accuracy and performance in the final dashboard.
+
+## ⚙️ Transformations Applied (ETL Process)
+1.  **Data Typing:** Corrected `Postal Code` to text and `Sales` to fixed decimal currency.
+2.  **Column Management:** Removed low-value columns (`Row ID`) to optimize model size.
+3.  **Text Parsing:** Split `Product ID` to isolate manufacturing codes.
+4.  **Conditional Logic:** Created a `Profit Status` segmentation column to flag "Loss Makers" vs "High Profit" orders automatically.
+5.  **Calculated Columns:** Engineered `Price Per Unit` to normalize sales data.
+
+## 📊 Visuals Created
+* **Profitability Segmentation:** Pie chart showing the ratio of profitable vs. loss-making orders.
+* **Unit Price Analysis:** Geographic map showing average unit pricing by state.
+
+## 📂 Files Included
+* `task12_transform.pbix` – The Power BI file containing the data model and applied steps.
+* `dashboard_export.pdf` – A snapshot of the visuals created from the transformed data.
+* `transformation_notes.txt` – Detailed log of the cleaning steps.
+
+---
 *Submitted by: Kalai Magal*
