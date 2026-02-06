@@ -423,4 +423,29 @@ Data "wrangling" is often 80% of an analyst's job. In this task, I imported raw 
 * `transformation_notes.txt` – Detailed log of the cleaning steps.
 
 ---
+
+# 📊 Task 13: Executive KPI Dashboard (Power BI)
+**Internship:** Elevate Labs | **Domain:** Data Analytics
+**Tool:** Power BI Desktop
+
+## 📝 Overview
+The final capstone project focuses on **Data Storytelling**. I built an interactive Executive Dashboard to visualize the sales performance of the Superstore dataset. The report moves from high-level KPIs to granular product details, enabling data-driven decision-making.
+
+## 🏗 Dashboard Structure
+* **Headline KPIs:** Immediate view of Total Sales ($2.3M), Profit ($286K), and Margin (12.5%).
+* **Trend Analysis:** Time-series line chart to track seasonal sales spikes.
+* **Geographic Insights:** Map visualization highlighting strong markets (California/New York) vs. underperforming states.
+* **Product Drivers:** Bar charts and Top 10 tables identifying best-selling inventory.
+
+## 🧠 Key Insights
+* **Top Category:** Technology (High Volume + High Margin).
+* **Problem Area:** Furniture (High Volume but Low Margin).
+* **Top Region:** West (Led by California).
+
+## 📂 Files Included
+* `dashboard.pbix` – The interactive Power BI file.
+* `dashboard_export.pdf` – A static snapshot of the final report.
+* `insights_task13.txt` – A summary of business recommendations.
+
+---
 *Submitted by: Kalai Magal*
