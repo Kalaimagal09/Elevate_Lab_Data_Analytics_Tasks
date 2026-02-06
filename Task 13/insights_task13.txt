@@ -1,0 +1,9 @@
+Executive KPI Report - Insights
+
+1. Financial Health: The company generated $2.30M in Total Sales with a healthy 12.5% Profit Margin. However, profitability varies significantly by region.
+
+2. Regional Performance: The West Region is the top performer ($725K Sales), driven heavily by California. In contrast, the South Region lags behind, suggesting a need for targeted marketing campaigns.
+
+3. Product Strategy: Technology products (specifically Phones) are the primary revenue drivers. However, the Furniture category (Tables/Bookcases) shows dangerously low margins, indicating that shipping costs may be eating into profits.
+
+4. Recommendation: Focus inventory on high-margin Technology items and renegotiate shipping rates for Furniture to improve overall profitability.
