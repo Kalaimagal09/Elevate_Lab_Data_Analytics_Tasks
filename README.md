@@ -448,4 +448,39 @@ The final capstone project focuses on **Data Storytelling**. I built an interact
 * `insights_task13.txt` – A summary of business recommendations.
 
 ---
+
+# ⚙️ Task 14: ETL Pipeline (Python & SQLite)
+**Internship:** Elevate Labs | **Domain:** Data Analytics / Data Engineering  
+**Project:** Superstore Data Warehouse Pipeline
+
+## 📝 Overview
+This project simulates a real-world **ETL (Extract, Transform, Load)** pipeline. Using Python, I ingested raw sales data, performed data cleaning and normalization, and loaded the structured data into a **SQLite database** to support downstream analytics.
+
+## 🔄 The Pipeline Steps
+### 1. Extract (E)
+* **Source:** Loaded `SampleSuperstore.csv` (Flat File).
+* **Validation:** Verified row counts and checked for file integrity.
+
+### 2. Transform (T)
+* **Cleaning:** * Standardized column headers (snake_case).
+    * Removed 34 duplicate rows.
+    * Imputed missing `postal_code` values.
+* **Feature Engineering:**
+    * Calculated `profit_margin`.
+    * Created `is_high_value` flag for orders > $500.
+* **Normalization:** Split the dataset into 3 relational tables:
+    * `dim_customers` (Unique Customer profiles)
+    * `dim_products` (Product catalog)
+    * `fact_orders` (Transactional data)
+
+### 3. Load (L)
+* **Target:** Stored final tables in a lightweight relational database (`superstore_dw.sqlite`).
+* **Backup:** Exported processed CSVs to a `data/processed/` directory.
+
+## 📂 Files Included
+* `task14_etl.ipynb` – The Python script executing the pipeline.
+* `superstore_dw.sqlite` – The final database file ready for SQL queries.
+* `dim_customers.csv` / `fact_orders.csv` – Processed flat files.
+
+---
 *Submitted by: Kalai Magal*
