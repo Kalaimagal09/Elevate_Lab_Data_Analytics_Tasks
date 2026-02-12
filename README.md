@@ -483,4 +483,31 @@ This project simulates a real-world **ETL (Extract, Transform, Load)** pipeline.
 * `dim_customers.csv` / `fact_orders.csv` – Processed flat files.
 
 ---
+
+# 🎯 Task 15: Customer Segmentation (RFM Analysis)
+**Internship:** Elevate Labs | **Domain:** Data Science / Marketing Analytics
+**Method:** RFM (Recency, Frequency, Monetary)
+
+## 📝 Overview
+To optimize marketing spend, I performed **Customer Segmentation** using the RFM technique. By analyzing customer transaction history, I grouped users into behavioral cohorts (e.g., "Champions", "At Risk") to enable targeted personalization.
+
+## 🛠 Analysis Steps
+1.  **Data Preprocessing:** Cleaned invoice data and handled cancellations.
+2.  **RFM Calculation:**
+    * **Recency:** Days since last purchase.
+    * **Frequency:** Total number of transactions.
+    * **Monetary:** Total revenue generated.
+3.  **Scoring:** Assigned quartiles (1-4) to each metric.
+4.  **Segmentation:** Mapped RFM scores to segments using business logic.
+
+## 📊 Key Findings
+* **Champions:** 22% of users drive 45% of revenue.
+* **At Risk:** A significant portion of customers haven't purchased in 90+ days, requiring immediate re-engagement.
+
+## 📂 Files Included
+* `task15_rfm.ipynb` – Python notebook with full analysis code.
+* `rfm_segments.csv` – Final dataset with Customer IDs and assigned segments.
+* `segment_actions.txt` – Strategic recommendations for each group.
+
+---
 *Submitted by: Kalai Magal*
