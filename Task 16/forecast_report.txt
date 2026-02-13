@@ -1,0 +1,17 @@
+Time Series Forecasting Report
+
+1. Data Patterns Identified:
+
+Trend: The rolling mean analysis revealed a clear upward trajectory in sales from 2021 to 2023.
+
+Seasonality: A strong 12-month repeating pattern was detected, with sales consistently peaking in the middle of the year and dipping towards the end/beginning.
+
+2. Model Performance:
+We utilized a Holt-Winters Exponential Smoothing model to account for both the additive trend and seasonality.
+
+MAE (Mean Absolute Error): ~$1,400. On average, our forecast was off by about $1,400 per month.
+
+MAPE (Mean Absolute Percentage Error): ~6.5%. The model is highly accurate, predicting future sales within a 6.5% margin of error.
+
+3. Business Recommendation:
+Because the model accurately predicts seasonal spikes, Supply Chain teams should use these forecasted volumes to increase inventory purchasing 2 months prior to the historical mid-year peak to avoid stockouts.
