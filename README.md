@@ -510,4 +510,31 @@ To optimize marketing spend, I performed **Customer Segmentation** using the RFM
 * `segment_actions.txt` – Strategic recommendations for each group.
 
 ---
+
+# 📈 Task 16: Time Series Forecasting (Python)
+**Internship:** Elevate Labs | **Domain:** Predictive Analytics  
+**Algorithm Used:** Holt-Winters Exponential Smoothing
+
+## 📝 Overview
+This task transitions from descriptive analytics to predictive modeling. Using Python's `statsmodels` library, I analyzed historical monthly sales data to identify underlying trends and seasonal patterns, subsequently building a forecasting model to predict future revenue.
+
+## 🛠 Tools & Methodology
+* **Libraries:** `pandas`, `matplotlib`, `statsmodels`, `sklearn`.
+* **Techniques:** * Time-Series Aggregation & Indexing.
+    * Rolling Means (Moving Averages) for noise reduction.
+    * Train/Test temporal splitting (preventing data leakage).
+    * Holt-Winters Exponential Smoothing (Trend + Seasonality).
+* **Evaluation Metrics:** MAE (Mean Absolute Error) and MAPE (Mean Absolute Percentage Error).
+
+## 📊 Key Findings
+* **Seasonality:** Visualized a strict 12-month seasonal cycle.
+* **Accuracy:** Achieved a MAPE of ~6.5%, meaning the model can predict next year's monthly revenue with approximately 93.5% accuracy.
+* **Forecast Value:** The generated `forecast_output.csv` enables proactive inventory and budget planning.
+
+## 📂 Files Included
+* `task16_forecasting.ipynb` – Jupyter notebook containing the full predictive pipeline.
+* `forecast_output.csv` – Side-by-side comparison of Actual vs. Forecasted sales.
+* `forecast_report.txt` – Executive summary of the model's accuracy and business utility.
+
+---
 *Submitted by: Kalai Magal*
